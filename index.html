@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1 class="monster center">Brawl Tic Tac Toe</h1>
+    </header>
+    <main>
+    
+        <div class="forms">
+            <div class="form-container-header">
+                <h1 style="margin-top: 1rem;" class="monster-medium center">New Game</h1>
+            
+            </div>
+            <hr>
+            <div class="form-container-body">
+                <div class="player-one">
+                    <form>
+                        <h2> Player one</h2>
+                        <label for="Name">Name</label>
+                        <input id="name" type="text" name="Name" placeholder="Enter Your Name" required>
+                        <label for="Caracters">Choose Your Character</label>
+                        <div id="Caracters" class="caracters">
+                            <div id="queen-nai" class="char-box">
+                                <img src="pictures/SkinIcon_QueenNai_Classic.webp" alt="">
+                            </div>
+                            <div id="artemis" class="char-box">
+                                <img src="pictures/SkinIcon_Artemis_Classic.webp" alt="" >
+                            </div>
+                            <div id="volkov" class="char-box">
+                                <img src="pictures/SkinIcon_Volkov_Classic.webp" alt="">
+                            </div>
+                            <div id="yumiko" class="char-box">
+                                <img src="pictures/SkinIcon_Yumiko_Classic.webp" alt="">
+                            </div>
+                        </div>
+                        <label for="Marks">Mark</label>
+                        <div id="Marks" class="marks">
+                            <div class="marks">
+                                <div id="spear" class="char-box">
+                                    <img src="pictures/Spear_Icon.webp" alt="">
+                                </div>
+                                <div id="rocket-lance" class="char-box">
+                                    <img src="pictures/Rocket_Lance_Icon.webp" alt="" >
+                                </div>
+                                <div id="schyte" class="char-box">
+                                    <img src="pictures/Scythe_Icon.webp" alt="">
+                                </div>
+                                <div id="bow" class="char-box">
+                                    <img src="pictures/Grapple_Hammer_Icon.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <img class="versus" src="pictures/vs-letters-versus-png.webp" alt="versus">
+                </div>
+                <div class="player-two">
+                    <form>
+                        <h2> Player two</h2>
+                        <label for="Name">Name</label>
+                        <input id="Name" type="text" name="Name" placeholder="Enter Your Name" required>
+                        <label for="Caracters">choose Your Character</label>
+                        <div id="Caracters" class="caracters">
+                            <div id="hatori" class="char-box">
+                                <img src="pictures/SkinIcon_Hattori_Classic.webp" alt="">
+                            </div>
+                            <div id="orion" class="char-box">
+                                <img src="pictures/SkinIcon_Orion_Classic.webp" alt="" >
+                            </div>
+                            <div id="nix" class="char-box">
+                                <img src="pictures/SkinIcon_Nix_Classic.webp" alt="">
+                            </div>
+                            <div id="magyar" class="char-box">
+                                <img src="pictures/SkinIcon_Magyar_Classic.webp" alt="">
+                            </div>
+                        </div>
+                        <label for="Marks">Mark</label>
+                        <div id="Marks" class="marks">
+                            <div id="spear" class="wep-box">
+                                <img src="pictures/Spear_Icon.webp" alt="">
+                            </div>
+                            <div id="rocket-lance" class="wep-box">
+                                <img src="pictures/Rocket_Lance_Icon.webp" alt="" >
+                            </div>
+                            <div id="schyte" class="wep-box">
+                                <img src="pictures/Scythe_Icon.webp" alt="">
+                            </div>
+                            <div id="bow" class="wep-box">
+                                <img src="pictures/Grapple_Hammer_Icon.webp" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div style="margin-top: 1rem;" class="form-container-footer">
+                <Button class="start">Start</Button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
