@@ -1,0 +1,206 @@
+:root{
+    --tarawera: #093d53;
+    --gray-nurse: #ecedec;
+    --turquoise: #29d4dc;
+    --valencia: #d24238;
+    --sandy-brown: #f3a853;
+    --cerulean: #0ba3ce;
+    --neptune: #80b8b8;
+    --sahara-sand: #f6e786;
+    --powder-blue: #b3e4df;
+    --thatch: #b59f98;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: monster;
+    src: url(fonts/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family:monster-medium;
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+body{
+    background-color: var(--turquoise);
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: 1fr;
+}
+.monster{
+    font-family: monster;
+}
+.monster-medium{
+    font-family:monster-medium;
+}
+header h1{
+    margin-top: 2rem;
+    font-weight: lighter;
+   
+}
+.center{
+    text-align: center;
+}
+main{
+    background-image: url(pictures/wallhaven-q6wyod_1920x800.png);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 620px;
+    grid-template-columns: 920px;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+.forms{
+    background-color: rgba(236, 237, 236, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.player-one , .player-two{
+    width: 310px;
+}
+.versus{
+    width: 300px;
+    margin-top: 5rem;
+}
+.form-container-body{
+    display: flex;
+}
+form h2{
+    background-color: var(--sandy-brown);
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-top: 1rem;
+    font-family: monster-medium;
+}
+form label{
+    font-family: monster-medium;
+    font-size: 1.5rem;
+}
+
+form input[type="text"]{
+    background-color: var(--powder-blue);
+    border: none;
+    height: 2rem;
+    text-align: center;
+    font-family: monster-medium;
+    cursor: pointer;
+}
+
+.char-box{
+    background-color: var(--powder-blue);
+    border-radius: 10px;
+}
+.wep-box{
+    border-radius: 10px;
+}
+.char-box  img , .wep-box img{
+    width: 60px;
+}
+.caracters , .marks{
+    display: flex;
+    gap: 1rem;
+}
+.form-container-footer{
+ text-align: center;
+}
+.start , .reset,.new-game,.restart{
+    width: 140px;
+    height: 40px;
+    font-family: monster-medium;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+}
+.caracters div , .marks div{
+    cursor: pointer;
+}
+.start{
+    background-color: var(--valencia);  
+}
+.reset{
+    background-color: var(--gray-nurse);
+}
+
+.selected{
+    border: 5px solid var(--sandy-brown);
+}
+
+/* .forms{
+    display: none;
+} */
+
+.GameBoard{
+    padding-top:2rem ;
+    display: grid;
+    grid-template-columns:repeat(3,100px) ;
+    grid-template-rows:repeat(3,100px) 50px;
+    gap: 1rem;
+    justify-content: center;
+    background-color: rgba(236, 237, 236, 0.5);
+    border: solid 5px var(--tarawera);
+    border-radius:20px ;
+}
+.cell{
+    /* background-image: url(pictures/Rocket_Lance_Icon.webp);
+    background-size: cover; */
+    background-color:var(--cerulean);
+    border-radius: 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 260px 400px 260px;
+    grid-template-rows: 500px 100px;
+    gap: 1rem;
+}
+.Player-two-container , .Player-one-container{
+    background-color: rgba(236, 237, 236, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+   padding-top: 2rem;
+   border: solid 5px var(--tarawera);
+    border-radius:20px ;
+}
+.image{
+    width: 100px;
+}
+.character{
+    background-color: var(--powder-blue);
+    width: 120px;
+    border: solid 5px var(--sandy-brown);
+}
+.mark img{
+    width: 120px;
+   border: solid 5px var(--sandy-brown);
+   background-color: var(--powder-blue);
+}
+.GameBoard p{
+    text-align: center;
+    font-size: 2rem;
+    grid-column: 1/4;
+}
+.options{
+    grid-column: 1/4;
+    text-align: center;
+}
+.new-game , .restart{
+    background-color: var(--sandy-brown);
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}

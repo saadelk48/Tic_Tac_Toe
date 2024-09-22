@@ -26,32 +26,32 @@
                         <input id="name" type="text" name="Name" placeholder="Enter Your Name" required>
                         <label for="Caracters">Choose Your Character</label>
                         <div id="Caracters" class="caracters">
-                            <div id="queen-nai" class="char-box">
+                            <div id="QueenNai" class="char-box">
                                 <img src="pictures/SkinIcon_QueenNai_Classic.webp" alt="">
                             </div>
-                            <div id="artemis" class="char-box">
+                            <div id="Artemis" class="char-box">
                                 <img src="pictures/SkinIcon_Artemis_Classic.webp" alt="" >
                             </div>
-                            <div id="volkov" class="char-box">
+                            <div id="Volkov" class="char-box">
                                 <img src="pictures/SkinIcon_Volkov_Classic.webp" alt="">
                             </div>
-                            <div id="yumiko" class="char-box">
+                            <div id="Yumiko" class="char-box">
                                 <img src="pictures/SkinIcon_Yumiko_Classic.webp" alt="">
                             </div>
                         </div>
                         <label for="Marks">Mark</label>
                         <div id="Marks" class="marks">
-                            <div class="marks">
-                                <div id="spear" class="char-box">
+                            <div id="Marks" class="marks">
+                                <div id="Spear_Icon" class="wep-box">
                                     <img src="pictures/Spear_Icon.webp" alt="">
                                 </div>
-                                <div id="rocket-lance" class="char-box">
+                                <div id="Rocket_Lance_Icon" class="wep-box">
                                     <img src="pictures/Rocket_Lance_Icon.webp" alt="" >
                                 </div>
-                                <div id="schyte" class="char-box">
+                                <div id="Scythe_Icon" class="wep-box">
                                     <img src="pictures/Scythe_Icon.webp" alt="">
                                 </div>
-                                <div id="bow" class="char-box">
+                                <div id="Grapple_Hammer_Icon" class="wep-box">
                                     <img src="pictures/Grapple_Hammer_Icon.webp" alt="">
                                 </div>
                             </div>
@@ -68,31 +68,31 @@
                         <input id="Name" type="text" name="Name" placeholder="Enter Your Name" required>
                         <label for="Caracters">choose Your Character</label>
                         <div id="Caracters" class="caracters">
-                            <div id="hatori" class="char-box">
+                            <div id="Hattori" class="char-box">
                                 <img src="pictures/SkinIcon_Hattori_Classic.webp" alt="">
                             </div>
-                            <div id="orion" class="char-box">
+                            <div id="Orion" class="char-box">
                                 <img src="pictures/SkinIcon_Orion_Classic.webp" alt="" >
                             </div>
-                            <div id="nix" class="char-box">
+                            <div id="Nix" class="char-box">
                                 <img src="pictures/SkinIcon_Nix_Classic.webp" alt="">
                             </div>
-                            <div id="magyar" class="char-box">
+                            <div id="Magyar" class="char-box">
                                 <img src="pictures/SkinIcon_Magyar_Classic.webp" alt="">
                             </div>
                         </div>
                         <label for="Marks">Mark</label>
                         <div id="Marks" class="marks">
-                            <div id="spear" class="wep-box">
+                            <div id="Spear_Icon" class="wep-box">
                                 <img src="pictures/Spear_Icon.webp" alt="">
                             </div>
-                            <div id="rocket-lance" class="wep-box">
+                            <div id="Rocket_Lance_Icon" class="wep-box">
                                 <img src="pictures/Rocket_Lance_Icon.webp" alt="" >
                             </div>
-                            <div id="schyte" class="wep-box">
+                            <div id="Scythe_Icon" class="wep-box">
                                 <img src="pictures/Scythe_Icon.webp" alt="">
                             </div>
-                            <div id="bow" class="wep-box">
+                            <div id="Grapple_Hammer_Icon" class="wep-box">
                                 <img src="pictures/Grapple_Hammer_Icon.webp" alt="">
                             </div>
                         </div>
@@ -101,11 +101,54 @@
             </div>
             <hr>
             <div style="margin-top: 1rem;" class="form-container-footer">
-                <Button class="start">Start</Button>
+                <Button id="start" class="start">Start</Button>
                 <button class="reset">Reset</button>
             </div>
         </div>
         
+        <div class="container">
+            <div class="Player-one-container">
+                <h2 class=" monster-medium">Player Name</h2>
+                <div class="character">
+                    <img class="image" src="pictures/SkinIcon_Artemis_Classic.webp" alt="">
+                </div>
+                <div class="mark">
+                    <img class="image" src="pictures/Grapple_Hammer_Icon.webp" alt="">
+                </div>
+                <p class="monster-medium" style="font-size: 2rem;"></p>
+            </div>
+
+            <div class="GameBoard">
+        
+                <div class="cell" id="id0"></div>
+                <div class="cell" id="id1"></div>
+                <div class="cell" id="id2"></div>
+                <div class="cell" id="id3"></div>
+                <div class="cell" id="id4"></div>
+                <div class="cell" id="id5"></div>
+                <div class="cell" id="id6"></div>
+                <div class="cell" id="id7"></div>
+                <div class="cell" id="id8"></div>
+                
+                <p class="winner monster-medium"></p>
+            </div>
+            <div class="Player-two-container">
+                <h2 class=" monster-medium">Player Name</h2>
+                <div class="character">
+                    <img class="image" src="pictures/SkinIcon_Artemis_Classic.webp" alt="">
+                </div>
+                <div class="mark">
+                    <img class="image" src="pictures/Grapple_Hammer_Icon.webp" alt="">
+                </div>
+                <p class="monster-medium" style="font-size: 2rem;"></p>
+            </div>
+            <div class="options">
+                <button class="restart monster-medium">Restart round</button>
+                <button class="new-game monster-medium">New Game</button>
+            </div>
+        </div> 
+        
+       
     </main>
     <footer>
 
